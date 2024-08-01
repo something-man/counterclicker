@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script>
+        let num = 0
+        function add(){
+            num = num + 1
+            document.getElementById("outputdiv").innerHTML = num
+        }
+        function sub(){
+            num = num - 1
+            document.getElementById("outputdiv").innerHTML = num
+        }
+        function reset(){
+            num = 0
+            document.getElementById("outputdiv").innerHTML = num
+        }
+    </script>
+    <div class="container" id="outputdiv"></div>
+    <div class="operation">
+        <button class="add" onclick=add()>ADD</button>
+        <button class="sub" onclick=sub()>SUB</button>
+    </div>
+    <div>
+        <button class="reset" onclick=reset()>RESET</button>
+    </div>
+
+
+</body>
+</html>
